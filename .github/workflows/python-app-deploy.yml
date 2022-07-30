@@ -16,6 +16,6 @@ jobs:
     - name: Composite Actions
       uses: testing-features-org/git-actions@main
       with:
-        SECRETS_CONTEXT: ${{ toJson(secrets) }}
+        SECRETS_CONTEXT: "${{ toJson(secrets) }}"
 
 
