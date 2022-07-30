@@ -10,7 +10,7 @@ def read_yaml(file):
 
 
 if __name__ == "__main__": 
-    parser = argparse.ArgumentParser(description='SECRETS_ENV_VARS.')
+    parser = argparse.ArgumentParser(description='VERIFYING SECRETS_ENV_VARS FROM GITHUB.')
     parser.add_argument('SECRETS_ENV_VARS',
                     help='secrets from github secrets')
 
