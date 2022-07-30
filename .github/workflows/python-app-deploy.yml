@@ -13,10 +13,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: View the secrets context
+    - name: Composite Actions
+      uses: testing-features-org/git-actions@main
       shell: bash
       run: echo "$SECRETS_CONTEXT"
-      env:
+      with:
         SECRETS_CONTEXT: ${{ toJson(secrets) }}
 
 
