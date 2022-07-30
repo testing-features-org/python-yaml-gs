@@ -15,7 +15,6 @@ jobs:
     steps:
     - name: Composite Actions
       uses: testing-features-org/git-actions@main
-      shell: bash
       run: echo "$SECRETS_CONTEXT"
       with:
         SECRETS_CONTEXT: ${{ toJson(secrets) }}
