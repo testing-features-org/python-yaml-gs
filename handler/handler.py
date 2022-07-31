@@ -18,7 +18,7 @@ if __name__ == "__main__":
     #                help='secrets from github secrets')
 
     #config = parser.parse_args()
-    GIT_VARS = json.loads(os.environ.get("GIT_VARS") or None)
+    GIT_VARS = json.loads(os.environ.get("GIT_VARS") or {})
     newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_1", "MY_SECRET_2"]}
     print(newDict)
 
