@@ -17,6 +17,8 @@ if __name__ == "__main__":
     #                help='secrets from github secrets')
 
     #config = parser.parse_args()
+    print(os.environ.get("GIT_VARS"))
+    print(type(os.environ.get("GIT_VARS")))
     GIT_VARS = json.loads(os.environ["GIT_VARS"])
     
     print(type(GIT_VARS))
