@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import yaml
 
 def read_yaml(file):
@@ -11,11 +12,12 @@ def read_yaml(file):
 
 
 if __name__ == "__main__": 
-    parser = argparse.ArgumentParser(description='VERIFYING SECRETS_ENV_VARS FROM GITHUB.')
-    parser.add_argument('SECRETS_ENV_VARS',
-                    help='secrets from github secrets')
+    #parser = argparse.ArgumentParser(description='VERIFYING SECRETS_ENV_VARS FROM GITHUB.')
+    #parser.add_argument('SECRETS_ENV_VARS',
+    #                help='secrets from github secrets')
 
-    config = parser.parse_args()
-    print(config)
+    #config = parser.parse_args()
+    
+    print(os.environ["GIT_VARS"])
 else: 
     print ("File1 is being imported")
