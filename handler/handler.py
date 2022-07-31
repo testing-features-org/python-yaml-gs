@@ -26,5 +26,7 @@ if __name__ == "__main__":
     print(GIT_VARS)
     newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_1"]}
     print(newDict)
+
+    
 else: 
     print ("File1 is being imported")
