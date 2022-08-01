@@ -23,6 +23,8 @@ if __name__ == "__main__":
     print(GIT_VARS)
     newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_5", "MY_SECRET_6"] }
     print(bool(newDict))
+    print(type(newDict))
+    print(len(newDict))
     if new_class == dict():
         print(newDict)
     else: print("NOTHING")
