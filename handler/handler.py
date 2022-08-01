@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print(bool(newDict))
     print(type(newDict))
     print(len(newDict))
-    if len(new_class) == 0:
+    if newDict:
         print(newDict)
     else: print("NOTHING")
 else: 
