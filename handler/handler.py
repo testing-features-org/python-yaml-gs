@@ -2,6 +2,7 @@ import argparse
 import ast
 import json
 import os
+from types import new_class
 import yaml
 
 def read_yaml(file):
@@ -20,7 +21,8 @@ if __name__ == "__main__":
     #config = parser.parse_args()
     GIT_VARS = json.loads(os.environ.get("GIT_VARS") or '{}')
     newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_5", "MY_SECRET_6"] }
-    print(newDict)
-
+    if new_class:
+        print(newDict)
+    else: print("NOTHING")
 else: 
     print ("File1 is being imported")
