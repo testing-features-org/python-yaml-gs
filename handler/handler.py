@@ -20,8 +20,9 @@ if __name__ == "__main__":
 
     #config = parser.parse_args()
     GIT_VARS = json.loads(os.environ.get("GIT_VARS") or '{}')
+    print(GIT_VARS)
     newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_5", "MY_SECRET_6"] }
-    if new_class:
+    if new_class == {}:
         print(newDict)
     else: print("NOTHING")
 else: 
