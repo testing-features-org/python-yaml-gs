@@ -19,9 +19,8 @@ if __name__ == "__main__":
 
     #config = parser.parse_args()
     GIT_VARS = json.loads(os.environ.get("GIT_VARS") or '{}')
-    newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_1", "MY_SECRET_2"]}
+    newDict = { key:value for (key,value) in GIT_VARS.items() if key in ["MY_SECRET_5", "MY_SECRET_6"] }
     print(newDict)
 
-    
 else: 
     print ("File1 is being imported")
